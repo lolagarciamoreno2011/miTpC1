@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap&family=Open+Sans:wght@300..800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, video {width: 100%;}
+
+
+
+header {
+    height: 50vh;
+    text-align: center;
+}
+
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    padding: 10vw;
+}
+
+
+nav {
+    color: white;
+    background-color: #000000;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav div {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+}
+
+
+header h3 {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 16px;
+
+
+}
+
+
+main section div {
+    width: 45.83%;
+    
+
+}
+
+section div img {
+    width: 100%; 
+    display: flex;
+   
+}
+
+main section div:hover {
+    border: solid 5px rgb(0, 51, 255);
+}
+
+main  section:first-child {
+justify-content:space-between;
+gap: 30px;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+section video {
+padding-top:5vh;
+
+}
+
+
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+    text-decoration: underline;
+    animation-name: miAnimacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+
+    
+}
+
+@keyframes miAnimacion {
+    from{transform: translateX(-300px);}
+
+    to{transform: translateX(10px);}
+}
+
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+
+    color: rgb(0, 51, 255);
+
+}
+
+header a {
+text-decoration: underline;
+text-transform:capitalize;
+
+  
+}
+
+header a:hover {
+text-decoration: none;
+font-size: 25px;
+background-color:rgb(0, 51, 255);
+color: white;
+padding: 10px;
+border-radius: 200%;
+}
+
+nav span {
+    display: none;
+}
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+font-size: 4vw;
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+
+button {
+    color: rgb(0, 51, 255);
+    background-color: white;
+    border-style:dotted;
+    border-color: rgb(0, 51, 255);
+}
+
+
+
+
+
+footer {
+    height: 160px;
+    background-color: black;
+    color: white;
+        }
+
+h4{
+
+font-size: 20px;
+text-align: center;
+transform: translateY(70px);
+
+}
+
+@media(max-width:992px) {
+    nav div{
+        width: 40%;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    nav span {
+        display: inline;
+    }
+
+
+
+}
